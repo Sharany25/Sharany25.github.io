@@ -1,10 +1,10 @@
 // Array de textos que se cambiarán
 const announcements = [
-    "¡Nuevo producto disponible!",
-    "Descubre nuestras ofertas especiales",
-    "¡Registra tu cuenta y obtendrás un 10% de descuento!",
-    "¡No te pierdas nuestras promociones!",
-    "¡Comparte tus experiencias con nosotros!"
+    "¡Vacaciones!",
+    "¡Docencias!",
+    "¡Graduaciones 6to!",
+    "¡Usar mas Higiene!",
+    "¡Nose que mas!"
 ];
 
 // Seleciona el elemento que contendrá el texto
