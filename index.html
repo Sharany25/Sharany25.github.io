@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página con recuadro blanco</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="top-box">
+        <div class="left">
+            <h1>Secretaría de Educación</h1>
+            <p>Educación Básica</p>
+        </div>
+        <div class="right">
+            <a href="#" class="button gray">Inicio</a>
+            <a href="#" class="button blue">Datos Generales</a>
+            <a href="#" class="button blue">Misión-Visión-Objetivos</a>
+            <a href="#" class="button blue">Noticias</a>
+            <a href="#" class="button blue">Más</a>
+        </div>
+    </div>
+    <div class="banner">
+        <img src="image/Banner.jpg" alt="Banner de la escuela">
+        <div class="banner-text">
+            <h2>C.C.T 15EPRO234M</h2>
+            <h3>Escuela Primaria "Lic. Adolfo López Mateos"</h3>
+        </div>
+    </div>
+
+<!-- Bloque 1 y 2 -->
+<div class="info-container">
+    <div class="info-block">
+        <div class="image-background" style="background-image: url('image/image1.jpg');">
+            <div class="info-text">
+                <h2 style="color: #007bff;">Título del bloque 1</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet nulla auctor, vestibulum magna sed, convallis ex.</p>
+            </div>
+        </div>
+    </div>
+    <div class="info-block">
+        <div class="image-background" style="background-image: url('image/image2.jpg');">
+            <div class="info-text">
+                <h2 style="color: #007bff;">Título del bloque 2</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet nulla auctor, vestibulum magna sed, convallis ex.</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!-- Bloque 3 y 4 -->
+<div class="info-container">
+    <div class="info-block">
+        <div class="image-background" style="background-image: url('image/image3.jpg');">
+            <div class="info-text">
+                <h2 style="color: #007bff;">Título del bloque 3</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet nulla auctor, vestibulum magna sed, convallis ex.</p>
+            </div>
+        </div>
+    </div>
+    <div class="info-block">
+        <div class="image-background" style="background-image: url('image/image4.jpg');">
+            <div class="info-text">
+                <h2 style="color: #007bff;">Título del bloque 4</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet nulla auctor, vestibulum magna sed, convallis ex.</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Contenedor del recuadro de anuncios -->
+<div class="announcement-box">
+    <!-- Texto que se cambiará -->
+    <p id="announcement-text"></p>
+    <!-- Flechas que cambian el texto -->
+    <span id="prev-arrow" class="arrow-left" onclick="changeAnnouncement(false)">‹</span>
+    <span id="next-arrow" class="arrow-right" onclick="changeAnnouncement(true)">›</span>
+</div>
+
+<!-- Contenedor del recuadro de contactanos -->
+<div class="contact-box">
+    <div class="contact-info" style="width: 70%;">
+        <h2 id="contact-title">Contactanos</h2>
+        <p id="contact-text">¿Necesitas ayuda o tienes alguna pregunta? ¡No dudes en contactarnos!</p>
+        <p id="contact-phone">Teléfono: 555-123-4567</p>
+        <p id="contact-email">Correo electrónico: <a href="mailto:info@example.com">info@example.com</a></p>
+        <p id="contact-url">¡Te esperamos!</p>
+    </div>
+    <div class="contact-location" style="width: 30%;">
+        <h2 id="location-title">Ubicación</h2>
+        <img src="image/map.png" alt="Ubicación" id="contact-map">
+        <p id="contact-address">Manzana 022, 52050 Col. Adolfo López Mateos Huitzizilapan, Méx.</p>
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

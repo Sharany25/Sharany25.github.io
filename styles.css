@@ -1,0 +1,223 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+}
+
+.top-box {
+    background-color: #ffffff;
+    padding: 50px; /* Aumenta el tamaño del recuadro blanco */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-bottom: 2px solid #ddd; /* Línea al final del recuadro */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px; /* Márgenes para separar el recuadro del borde de la página */
+}
+
+.left {
+    text-align: left;
+}
+
+.right {
+    display: flex;
+    gap: 15px;
+}
+
+.top-box h1, .top-box p {
+    margin: 0;
+    background: linear-gradient(90deg, #33CCFF, #2699E6);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.top-box h1 {
+    font-size: 24px;
+}
+
+.top-box p {
+    margin-top: 5px;
+    font-size: 18px;
+}
+
+.button {
+    text-decoration: none;
+    font-size: 14px;
+    cursor: pointer;
+    padding: 10px 15px;
+    transition: color 0.3s;
+}
+
+.button.gray {
+    color: #808080; /* Color gris */
+}
+
+.button.gray:hover {
+    color: #606060; /* Un tono más oscuro de gris */
+}
+
+.button.blue {
+    background: linear-gradient(90deg, #0D33B3, #1A66CC);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.button.blue:hover {
+    color: #1A66CC; /* Azul sólido al hacer hover */
+}
+
+.banner {
+    position: relative;
+    text-align: center;
+    color: white;
+    margin: 20px auto;
+    width: 80%; /* Reduce el ancho de la imagen */
+    border-radius: 10px; /* Bordes redondeados */
+    overflow: hidden; /* Para asegurar que los bordes redondeados se apliquen también a la imagen */
+}
+
+.banner img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px; /* Bordes redondeados de la imagen */
+}
+
+.banner-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.banner-text h2 {
+    margin: 0;
+    font-size: 36px;
+    background: rgba(0, 0, 0, 0.5); /* Fondo semitransparente */
+    padding: 10px;
+}
+
+.banner-text h3 {
+    margin: 10px 0 0;
+    font-size: 24px;
+    background: rgba(0, 0, 0, 0.5); /* Fondo semitransparente */
+    padding: 10px;
+}
+
+.info-container {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px;
+}
+
+.info-block {
+    width: 45%;
+    margin: 10px;
+}
+
+.image-background {
+    background-size: cover;
+    background-position: center;
+    height: 300px; /* Aumenta la altura de la imagen */
+    width: 100%; /* Aumenta el ancho de la imagen */
+    position: relative;
+}
+
+.info-text {
+    position: absolute;
+    bottom: 20px; /* Posiciona el recuadro en la parte inferior */
+    left: 20px; /* Posiciona el recuadro en la esquina izquierda */
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 40%; /* Ajusta el ancho del recuadro */
+}
+
+.info-text h2 {
+    margin-top: 0;
+}
+
+.info-text p {
+    color: #333;
+}
+
+.announcement-box {
+    background-color: #007bff; /* Fondo azul */
+    padding: 40px; /* Aumenta el padding para darle un tamaño grande */
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 80%; /* Aumenta el ancho del recuadro */
+    margin: 20px auto; /* Centra el recuadro horizontalmente */
+    text-align: center; /* Centra el texto horizontalmente */
+    position: relative; /* Posición relativa para las flechas */
+}
+
+#announcement-text {
+    font-size: 24px; /* Aumenta el tamaño del texto */
+    color: #ffffff; /* Texto blanco */
+    font-weight: bold;
+}
+
+.arrow-left, .arrow-right {
+    position: absolute; /* Posición absoluta para las flechas */
+    top: 50%; /* Centra las flechas verticalmente */
+    transform: translateY(-50%); /* Centra las flechas verticalmente */
+    font-size: 24px; /* Aumenta el tamaño de las flechas */
+    color: #ffffff; /* Flechas blancas */
+    cursor: pointer; /* Cambia el cursor a una mano para indicar que es clickable */
+}
+
+.arrow-left {
+    left: 20px; /* Mueve la flecha izquierda a la izquierda */
+}
+
+.arrow-right {
+    right: 20px; /* Mueve la flecha derecha a la derecha */
+}
+
+.contact-box {
+    display: flex; /* Establece un layout de flexbox */
+    justify-content: space-between; /* Distribuye los elementos en la línea */
+    align-items: center; /* Centra los elementos verticalmente */
+    padding: 20px; /* Reduce el padding */
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 80%; /* Aumenta el ancho del recuadro */
+    margin: 20px auto; /* Centra el recuadro horizontalmente */
+}
+
+.contact-info {
+    flex-basis: 45%; /* Reduce el ancho del elemento a 45% */
+    padding: 20px;
+    background-color: #ffffff; /* Fondo blanco */
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.contact-location {
+    flex-basis: 45%; /* Reduce el ancho del elemento a 45% */
+    padding: 20px;
+    background-color: #ffffff; /* Fondo blanco */
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#contact-title, #location-title {
+    font-size: 24px; /* Ajusta el tamaño del título */
+    color: #007bff; /* Título azul */
+    font-weight: bold;
+    margin-bottom: 20px; /* Añade un margen inferior al título */
+}
+
+#contact-text, #contact-address {
+    font-size: 18px; /* Ajusta el tamaño del texto */
+    color: #007bff; /* Texto azul */
+    margin-bottom: 20px; /* Añade un margen inferior al texto */
+}
+
+#contact-map {
+    width: 100%; /* Ajusta el ancho de la imagen */
+    height: 150px; /* Ajusta el alto de la imagen */
+    object-fit: cover; /* Ajusta la imagen para que se ajuste al contenedor */
+}
